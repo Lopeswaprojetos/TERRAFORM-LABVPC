@@ -2,7 +2,7 @@
 
 A imagem abaixo descreve a arquitetura da infraestrutura provisionada por este projeto:
 
-![Arquitetura do Projeto](arquitetura.png)
+arquitetura.png
 
 
 <!-- BEGIN_TF_DOCS -->
