@@ -1,3 +1,5 @@
+## Projeto Terraform VPC - AWS
+
 ## Arquitetura
 
 A imagem abaixo descreve a arquitetura da infraestrutura provisionada por este projeto:
@@ -5,10 +7,47 @@ A imagem abaixo descreve a arquitetura da infraestrutura provisionada por este p
 ![Diagrama VPC](https://github.com/Lopeswaprojetos/TERRAFORM-LABVPC/blob/main/DIAGRAMA%20-%20VPC%20-%20EC2.png)
 
 
-<!-- BEGIN_TF_DOCS -->
-## Requirements
 
-No requirements.
+## Descrição do Projeto
+
+Este projeto foi criado para provisionar e gerenciar infraestrutura na AWS utilizando o Terraform. Ele segue as melhores práticas de Infrastructure as Code (IaC) e foi desenhado para ser modular e reutilizável.
+
+## Arquitetura
+A infraestrutura criada por este projeto inclui:
+
+**Internet Gateway:** Permite a comunicação entre a VPC e a internet.
+
+**NAT Gateway:** Fornece acesso à internet para instâncias em subnets privadas.
+
+**Application Load Balancer:** Distribui o tráfego entre as instâncias em diferentes zonas de disponibilidade.
+
+**Auto Scaling Group:** Garante que a aplicação tenha a capacidade necessária para lidar com a carga de trabalho, escalando automaticamente.
+
+**Instâncias EC2:** Servidores virtuais para rodar a aplicação, distribuídos em subnets públicas e privadas.
+
+## Estrutura do Projeto
+**main.tf:** Arquivo principal com a definição dos recursos.
+
+**variables.tf:** Definição de variáveis de entrada para o projeto.
+
+**outputs.tf:** Definição das saídas que o Terraform vai gerar após a criação da infraestrutura.
+
+**providers.tf:** Configuração dos provedores (neste caso, AWS).
+
+**terraform.tfvars:** Variáveis específicas do ambiente que são carregadas automaticamente pelo Terraform.
+
+**modules/:** Diretório contendo módulos reutilizáveis.
+
+## Pré-requisitos
+Antes de iniciar, você deve ter:
+
+Terraform instalado na sua máquina.
+
+Uma conta na AWS.
+
+Configurações de credenciais AWS (aws configure) configuradas.
+
+
 
 ## Providers
 
