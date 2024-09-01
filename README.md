@@ -2,7 +2,7 @@
 
 A imagem abaixo descreve a arquitetura da infraestrutura provisionada por este projeto:
 
-arquitetura.png
+![Diagrama VPC](https://github.com/Lopeswaprojetos/TERRAFORM-LABVPC/blob/main/DIAGRAMA%20-%20VPC%20-%20EC2.png)
 
 
 <!-- BEGIN_TF_DOCS -->
